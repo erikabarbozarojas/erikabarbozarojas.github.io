@@ -1,0 +1,141 @@
+//plan
+.plan {
+	border:1px solid rgb(231, 231, 231);
+	@include transition(.4s);
+	&:hover {
+		background: $white;
+		box-shadow: 0px 0px 30px 0px rgba(237, 237, 237, 0.77);	 
+		border: 1px solid transparent; 
+	}
+	& .pr_price {
+		color: $theme-color;
+		font-size: 55px;
+		position: relative;
+		padding-left: 10px;
+		display: inline-block;
+		& .dollar-sign {
+			font-size: 20px;
+			line-height: 28px;
+			position: absolute;
+			top: 8px;
+			left: -8px;
+		}
+	}
+}
+.pr_head {
+	& .tag-name {
+		font-size: 14px;
+		line-height: 1;
+		font-family: "cerebri_sanssemibold";
+		padding: 6px 11px;
+		border-radius: 22px 0 22px 22px;
+		right: 0;
+		top: -36px;
+	}
+	& h3 {
+		font-size: 30px;
+		line-height: 1.6;
+		font-family: $cerebri-semi;
+		margin-bottom: 30px;
+	}
+}
+.pr_body {
+	& .pr_list {
+		& li {
+			color: $body-text-color;
+			font-size: 18px;
+			line-height: 28px;
+			font-family: $futurabook;
+			margin:14px 0;
+		} 
+	} 
+} 
+
+//plan-02
+.plan-02 {
+	background:none;
+	border: 0;
+	background: white;
+	margin-right: 10px;
+	margin-top: 10px;
+	&::before {
+		content: "";
+		background: $theme-color;
+		position: absolute;
+		left: -12px;
+		top: -10px;
+		width: 100%;
+		height: 100%;
+		z-index: 1; 
+		@include transition(.4s);
+	}
+	& .hover-bg {
+		background-size:cover ;
+		background-repeat: no-repeat;
+		max-width: 361px;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		right: 0;
+		border: 0;
+		@include transition(.4s);
+		@media #{$xs} {
+			max-width: 100%;
+		}
+		@media #{$sm} {
+			max-width: 100%;
+		}
+	}
+}
+.plan-inner {
+	padding: 60px 50px;
+	z-index: 11;
+	@media #{$lg} {
+		padding: 45px 25px;
+	}
+	@include transition(.4s);
+	&:hover {
+		background: transparent;
+		.pr_head_02 {
+			& h3 {
+				color: $white;
+			}
+			& h2 {
+				color: $white;
+				& .month {
+					color: $white;
+				}
+			}
+		}
+		p {
+			color: $white;
+		}
+	}
+	& a {
+		padding: 20px 49px;
+		display: inline-block;
+	}
+}
+.pr_head_02 {
+	& h3 {
+		color: $heding;
+		font-size: 30px;
+		line-height: 28px;
+		font-family: cerebri-semi;
+		margin:0;
+		margin-bottom: 20px;
+		@include transition(.4s);
+	}
+	& h2 {
+		color: $theme-color;
+		margin-bottom: 10px;
+		@include transition(.4s);
+		& .month {
+			color: $heding;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+}

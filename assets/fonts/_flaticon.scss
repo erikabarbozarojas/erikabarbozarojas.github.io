@@ -1,0 +1,96 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/08/2020 04:21
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-flower:before { content: "\f100"; }
+.flaticon-shovel:before { content: "\f101"; }
+.flaticon-watering-can:before { content: "\f102"; }
+.flaticon-floral:before { content: "\f103"; }
+.flaticon-garden:before { content: "\f104"; }
+.flaticon-watering-can-1:before { content: "\f105"; }
+.flaticon-quotation-mark:before { content: "\f106"; }
+.flaticon-growth:before { content: "\f107"; }
+.flaticon-pruning-shears:before { content: "\f108"; }
+.flaticon-plant:before { content: "\f109"; }
+.flaticon-rake:before { content: "\f10a"; }
+.flaticon-planting:before { content: "\f10b"; }
+.flaticon-yard:before { content: "\f10c"; }
+.flaticon-gardening:before { content: "\f10d"; }
+.flaticon-gardening-tools:before { content: "\f10e"; }
+.flaticon-farming-and-gardening:before { content: "\f10f"; }
+.flaticon-tree:before { content: "\f110"; }
+.flaticon-plant-1:before { content: "\f111"; }
+.flaticon-garden-tools:before { content: "\f112"; }
+.flaticon-tree-1:before { content: "\f113"; }
+.flaticon-growth-1:before { content: "\f114"; }
+.flaticon-watering-can-2:before { content: "\f115"; }
+.flaticon-tractor:before { content: "\f116"; }
+.flaticon-water:before { content: "\f117"; }
+.flaticon-sunflower:before { content: "\f118"; }
+.flaticon-soil:before { content: "\f119"; }
+.flaticon-fence:before { content: "\f11a"; }
+.flaticon-construction-and-tools:before { content: "\f11b"; }
+    
+    $font-Flaticon-flower: "\f100";
+    $font-Flaticon-shovel: "\f101";
+    $font-Flaticon-watering-can: "\f102";
+    $font-Flaticon-floral: "\f103";
+    $font-Flaticon-garden: "\f104";
+    $font-Flaticon-watering-can-1: "\f105";
+    $font-Flaticon-quotation-mark: "\f106";
+    $font-Flaticon-growth: "\f107";
+    $font-Flaticon-pruning-shears: "\f108";
+    $font-Flaticon-plant: "\f109";
+    $font-Flaticon-rake: "\f10a";
+    $font-Flaticon-planting: "\f10b";
+    $font-Flaticon-yard: "\f10c";
+    $font-Flaticon-gardening: "\f10d";
+    $font-Flaticon-gardening-tools: "\f10e";
+    $font-Flaticon-farming-and-gardening: "\f10f";
+    $font-Flaticon-tree: "\f110";
+    $font-Flaticon-plant-1: "\f111";
+    $font-Flaticon-garden-tools: "\f112";
+    $font-Flaticon-tree-1: "\f113";
+    $font-Flaticon-growth-1: "\f114";
+    $font-Flaticon-watering-can-2: "\f115";
+    $font-Flaticon-tractor: "\f116";
+    $font-Flaticon-water: "\f117";
+    $font-Flaticon-sunflower: "\f118";
+    $font-Flaticon-soil: "\f119";
+    $font-Flaticon-fence: "\f11a";
+    $font-Flaticon-construction-and-tools: "\f11b";

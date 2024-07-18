@@ -1,0 +1,44 @@
+// Font Family
+$futura-light: 'futuralight';
+$futurabook: 'futurabook';
+$futura-medium: 'futuramedium';
+$futura_hv: 'futura_hv_btheavy';
+$futura-bold: 'futurabold';
+$cerebri-light: 'cerebri_sanslight';
+$cerebri-regular: 'cerebri_sansregular';
+$cerebri-medium: 'cerebri_sansmedium';
+$cerebri-semi: 'cerebri_sanssemibold';
+$cerebri-bold: 'cerebri_sansbold';
+$cerebri-heavy: 'cerebri_sansheavy';
+
+
+// Colors ---------------
+$white: #ffffff;
+$black: #222;
+$green:#0d3c00;
+$green-soft:#0b3300;
+$grey:#f4f5f0;
+$theme-color: #6a961f;
+$body-text-color: #777777;
+$body-text-color2: #6a6a6a;
+$body-text-color3: #6d6d6d;
+$hr-border-color:#ebebeb;
+$hr-border-color2:#e7e7e7;
+
+
+// Heading Color
+$heding: #0d3c00;
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$xxl2: 'only screen and (min-width: 1601px) and (max-width: 1920px)';
+$xxl: 'only screen and (min-width: 1601px) and (max-width: 1900px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
