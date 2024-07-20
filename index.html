@@ -103,7 +103,7 @@
     <!-- slide-bar start -->
     <aside class="slide-bar">
         <div class="close-mobile-menu">
-            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+            <a href="javascript:void(0);"  id="mobileCloseButton"><i class="fas fa-times"></i></a>
         </div>
 
         <!-- offset-sidebar start -->
@@ -165,11 +165,11 @@
         <nav class="side-mobile-menu">
             <ul id="mobile-menu-active">
                 <ul>
-                    <li><a href="#top-menu">Home</a></li>
-                    <li><a href="#aboutUs">About Us</a></li>
-                    <li><a href="#whatWeDo">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contactUs">Contact Us</a></li>
+                    <li><a href="#top-menu" onclick="closeMobileMenu();">Home</a></li>
+                    <li><a href="#aboutUs" onclick="closeMobileMenu();">About Us</a></li>
+                    <li><a href="#whatWeDo" onclick="closeMobileMenu();">Services</a></li>
+                    <li><a href="#gallery" onclick="closeMobileMenu();">Gallery</a></li>
+                    <li><a href="#contactUs" onclick="closeMobileMenu();">Contact Us</a></li>
                 </ul>
             </ul>
         </nav>
@@ -1588,6 +1588,12 @@
     <script src="assets/js/jquery.easypiechart.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script>
+        function closeMobileMenu(){
+            document.getElementById('mobileCloseButton').click();
+        }
+    </script>
 </body>
 
 </html>
