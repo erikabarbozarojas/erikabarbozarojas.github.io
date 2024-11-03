@@ -247,8 +247,8 @@ $('.partner-active').slick({
 	infinite: false,
 	autoplay:true,
 	autoplaySpeed: 4000,
-	slidesToShow: 6,
-	slidesToScroll: 2,
+	slidesToShow: 4,
+	slidesToScroll: 1,
 	responsive: [
 	  {
 		breakpoint: 1090,

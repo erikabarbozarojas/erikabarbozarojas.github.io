@@ -2990,6 +2990,7 @@ input.main-search-input:-ms-input-placeholder {
   line-height: 26px;
   font-family: "cerebri_sanssemibold";
   margin-right: 20px;
+  margin-top: 20px;
 }
 @media (max-width: 767px) {
   .slider__content .list-item a {
