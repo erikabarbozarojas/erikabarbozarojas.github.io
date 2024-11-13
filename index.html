@@ -66,28 +66,29 @@
             }
         </script>
         <div class="main-header-area">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                        <div class="logo pl-55">
-                            <a href="index.html"><img src="assets/img/AGMS/logo Agromultiservicios ok - copia.png"
-                                    style="width:190x;height: 50px;0px;" alt=""></a>
-                        </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <div class="logo pl-55">
+                        <a href="index.html"><img src="../assets/img/AGMS/logo Agromultiservicios ok - copia.png"
+                                style="width:190x;height: 50px; 0px; " alt=""></a>
                     </div>
-                    <div class="col-xl-8 col-lg-8 d-none d-lg-block">
-                        <div class="main-menu ml-30 d-none d-lg-block text-center">
-                            <nav>
-                                <ul>
-                                    <li><a href="#top-menu">Home</a></li>
-                                    <li><a href="#aboutUs">About Us</a></li>
-                                    <li><a href="#WhyChooseUs">Why Choose Us</a></li>
-                                    <li><a href="#Services">Services</a></li>
-                                    <li><a href="#gallery">Gallery</a></li>
-                                    <li><a href="#News">News</a></li>
-                                    <li><a href="#contactUs">Contact Us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                    <div class="main-menu ml-30 d-none d-lg-block text-center">
+                        <nav>
+                            <ul>
+                                <li><a href="#top-menu">Home</a></li>
+                                <li><a href="#Services">Services</a></li>
+                                <li><a href="#WhyChooseUs">Why choose us?</a></li>
+                                <li><a href="#aboutUs">About us</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#News">News</a></li>
+                                <li><a href="#contactUs">Contact us</a></li>
+                            </ul>
+                        </nav>
+                       
+                    </div>
+                </div>
                     </div>
                     <div class="col-xl-2 col-lg-1 col-md-4 col-6 text-right">
                         <div class="hamburger-menu d-block d-xl-none pr-55">
@@ -168,9 +169,9 @@
             <ul id="mobile-menu-active">
                 <ul>
                     <li><a href="#top-menu" onclick="closeMobileMenu();">Home</a></li>
+                    <li><a href="#Services" onclick="closeMobileMenu();">Services</a></li>
+                    <li><a href="#WhyChooseUs" onclick="closeMobileMenu();">Why Choose Us?</a></li>
                     <li><a href="#aboutUs" onclick="closeMobileMenu();">About Us</a></li>
-                    <li><a href="#WhyChooseUs" onclick="closeMobileMenu();">Why Choose Us</a></li>
-                    <li><a href="#whatWeDo" onclick="closeMobileMenu();">Services</a></li>
                     <li><a href="#gallery" onclick="closeMobileMenu();">Gallery</a></li>
                     <li><a href="#contactUs" onclick="closeMobileMenu();">Contact Us</a></li>
                 </ul>
@@ -226,7 +227,7 @@
                                             <ul class="btn-list">
                                                 <li><a class="theme_btn" href="#gallery" data-animation="fadeInUp"
                                                         data-delay=".7s">Get a quote</a></li>
-                                                <li><a class="theme_btn border_btn" href="about.html"
+                                                <li><a class="theme_btn border_btn" href="#aboutUs"
                                                         data-animation="fadeInUp" data-delay=".8s">About us</a></li>
                                             </ul>
                                 </div>
@@ -309,7 +310,7 @@
                                 <h5>Efficacy trials (internal and for registration purposes)</h5>
                                 <p>Suitable researchers for conducting trial with bactericides, fungicides,
                                     insecticides, biostimulants, nematicides, herbicides, biological inputs, and plant
-                                    growth regulators. Scopes: laboratory (in vitro), greenhouse/nursery, field,
+                                    growth regulators. Scopes: laboratory (<em>in vitro</em>), greenhouse/nursery, field,
                                     post-harvest chamber.</p>
 
                             </div>
@@ -444,7 +445,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 offset-xl-6 offset-lg-6 col-12">
                             <div class="provide-wrapper pl-110 pr-180">
                                 <div class="section-title mb-60">
-                                    <span class="left-line mb-15 pl-20">Why Choose Us</span>
+                                    <span class="left-line mb-15 pl-20">Why Choose Us?</span>
                                     <h2 class="mb-30">More than a service...</h2>
 
                                     <p class="mb-40">At Agromultiservicios, we strive to be an international benchmark
@@ -670,8 +671,10 @@
                                     needs of the requested service. We offer punctuality, confidentiality, quality and
                                     transparency in all our services.
                                     We have cooperation Agreements with partners in Mexico, Guatemala, Ecuador
-                                    (Agroambiente), Nicaragua
-                                    and Argentina for clients interested in these markets.</p>
+                                    <a href="https://www.agroambiente.com.ec/" target="_blank"
+                                        style="color: rgb(10, 61, 172);">(Agroambiente)</a>, Nicaragua
+                                    and Argentina for clients interested in these markets.
+                                </p>
 
                             </div>
                         </div>
@@ -737,7 +740,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-7 offset-xl-3 offset-lg-2">
                             <div class="section-title text-center mb-80">
-                                <span class="mb-15">Galery</span>
+                                <span class="mb-15">Gallery</span>
                                 <h2 class="mb-30">Explore our projects
                                 </h2>
                             </div>
@@ -1033,8 +1036,9 @@
                                     <h5>Orange</h5>
                                     <p> We conduct trials in commercial orange plantations and controlled greenhouses,
                                         enabling us to evaluate biological and synthetic inputs for pest and disease
-                                        control. Key targets include greasy spots, Diaphorina citri, anthracnose, and
-                                        Spodoptera sp.
+                                        control. Key targets include greasy spots, <em>Diaphorina citri</em>,
+                                        anthracnose, and
+                                        <em>Spodoptera</em> sp.
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1236,7 +1240,7 @@
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Pineapple</h5>
                                     <p> Agromultiservicios proudly offers a comprehensive range of specialized services
-                                        for this crop, including evaluation of inputs for weed, disease, and pest
+                                        for this crop, including evaluation of inputs for weeds, disease, and pest
                                         control; inoculated testing; pathogen identification; and sampling for pesticide
                                         residue detection.
                                     </p>
@@ -1258,16 +1262,16 @@
                                                     d="M37.61,19.2c0-.36-.19-.71-.5-.92l-.29-.2c-.35-.45-.73-.89-1.14-1.31-1.25-1.3-2.67-2.33-4.19-3.11l1.17-2.2c.21-.4,.17-.89-.11-1.25-.28-.36-.75-.52-1.19-.42l-4.03,.97c-.21-1.77-.89-3.55-2.12-4.82-.44-.46-1.18-.47-1.64-.03s-.47,1.18-.03,1.64c.93,.97,1.4,2.39,1.52,3.75l-7.88-1.72c-.5-.11-1.01,.12-1.26,.57-.25,.45-.18,1,.18,1.37l1.56,1.61c-1.78,.76-3.45,1.83-4.92,3.25-.21,.2-.39,.42-.58,.62-.22,.12-.39,.31-.5,.53-5.36,6.28-5.17,15.73,.69,21.79,6.23,6.44,16.5,6.62,22.94,.39,5.68-5.49,6.48-14.12,2.33-20.5ZM14.01,37.7c-4.96-5.13-5.17-13.13-.72-18.51l1.53,.05c-2.14,2.24-3.5,5.25-3.55,8.58-.06,3.51,1.32,6.72,3.58,9.07s5.43,3.83,8.94,3.89c.64,.01,1.17-.5,1.18-1.14,.01-.64-.5-1.17-1.14-1.18-5.75-.1-10.35-4.86-10.25-10.61,.06-3.56,1.91-6.68,4.68-8.51l.71,.02-1,6.78c-.05,.36,.07,.72,.31,.97,.09,.09,.19,.17,.3,.23,.44,.23,.98,.15,1.33-.2l5.93-5.73,6.48,5.22c.41,.33,.99,.34,1.42,.03,.42-.31,.58-.87,.39-1.36l-1.96-4.91h3.44c3.61,5.47,2.94,12.93-1.94,17.64-5.51,5.33-14.34,5.18-19.66-.34ZM24.85,13.61s.03,0,.05,0c-.15,.57-.37,1.03-.66,1.31-.46,.45-.47,1.18-.03,1.64s1.18,.47,1.64,.03c.79-.77,1.3-2.03,1.48-3.46l2.08-.5-.75,1.42c-.28,.52-.12,1.16,.37,1.5l3.69,2.52h-2.24c-.38,0-.74,.19-.96,.51-.22,.32-.26,.72-.12,1.08l.96,2.39-3.83-3.09c-.46-.37-1.11-.34-1.53,.07l-4.22,4.08,.69-4.7c.05-.33-.05-.66-.26-.91-.02-.02-.04-.04-.06-.06-.21-.22-.49-.34-.8-.35l-3.26-.1,3.61-1.93c.32-.17,.54-.48,.6-.84,.06-.36-.06-.72-.31-.99l-.56-.58,4.43,.96Z" />
                                             </g>
                                             <rect class="fil_none" x="-.66" y="-1.01" width="51.2" height="51.26" />
-                                            
+
                                         </svg>
                                     </div>
                                 </div>
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Tomato</h5>
-                                    <p> The warm, humid climate of Costa Rica requires effective disease control tools
-                                        for horticultural crops like tomatoes. We primarily target bacterial and fungal
-                                        diseases in our evaluation of agricultural inputs, designing each experiment to
-                                        meet client needs.
+                                    <p> The warm and humid climate of Costa Rica requires effective disease control
+                                        tools for horticultural crops like tomatoes. Our main focus has been the
+                                        evaluation of inputs for controlling bacterial and fungal diseases, designing
+                                        each experiment to meet the client's needs.
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1296,9 +1300,9 @@
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Beans</h5>
                                     <p> Agromultiservicios evaluates products for this crop, including herbicides, soil
-                                        amendments, and bioferments. We manage all aspects of crop cultivation, from
-                                        planting to harvest, ensuring expert care at every stage to maximize quality and
-                                        yield.
+                                        amendments, and bioferments. We manage all aspects of the crop, from planting to
+                                        harvest, ensuring expert care at every stage to maximize the quality of the data
+                                        collected and the optimal development of the crop.
 
                                     </p>
                                 </div>
@@ -1333,10 +1337,10 @@
                                 </div>
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Avocado</h5>
-                                    <p>Our work primarily focuses on conducting fungicide efficacy trials for disease
-                                        control during the crucial periods of flowering and fruit development. These
-                                        trials provide essential insights to help growers make informed decisions
-                                        regarding crop health.
+                                    <p>Our work has focused mainly on the execution of fungicide efficacy trials for
+                                        disease control during the flowering and fruit development period. Inputs that
+                                        improve the productivity of avocado trees and disease control are especially
+                                        valuable for this sector
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1382,9 +1386,9 @@
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Potato</h5>
                                     <p> Control of whitefly, moth, early blight, late blight, soil regenerators, and
-                                        nutritional trials are commonly requested by our clients. These services address
-                                        various crop management challenges, and we are dedicated to providing effective
-                                        solutions to help clients improve their agricultural practices and yields.
+                                        nutritional trials are commonly requested by our clients. Potato cultivation in
+                                        Costa Rica requires the availability of plant protection products and nutrients
+                                        that allow producers to maximize their harvest and reduce losses.
 
                                     </p>
                                 </div>
@@ -1442,14 +1446,12 @@
                                     </div>
                                 </div>
                                 <div class="popular__content pl-20 pr-20 text-center">
-                                    <h5>Brocolli</h5>
+                                    <h5>Broccoli</h5>
                                     <p>
 
-                                        Broccoli and other Brassicas are important horticultural crops for which we
-                                        assess various agricultural inputs to enhance growth and productivity. We also
-                                        offer specialized services for isolating and inoculating target pathogens,
-                                        helping growers understand their effects on crop health and yield.
-
+                                        Broccoli and other Brassicas are among the horticultural crops for which we have
+                                        assessed various agricultural inputs. Additionally, we offer services for
+                                        isolating and inoculating target pathogens.
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1468,10 +1470,11 @@
                                 <div class="popular__content pl-20 pr-20 text-center">
                                     <h5>Cacao</h5>
                                     <p> We frequently evaluate variables such as flowering, fruit set, and productivity.
-                                        Inputs that enhance fruit set are especially valuable for the agricultural
-                                        sector, as they significantly influence the quantity and quality of the harvest.
-                                        By focusing on these factors, we provide insights to help farmers optimize their
-                                        cultivation practices.
+                                        Inputs that improve cocoa productivity and disease control are especially
+                                        valuable for this sector. Our partners in Ecuador (Agroambiente) are specialists
+                                        in this crop, and we are proud to rely on their expertise and advice in
+                                        designing our research.
+
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1507,7 +1510,7 @@
                                     <h5>Onion</h5>
                                     <p>Our research services catalog includes agronomic validation tests of new
                                         cultivars for registration in Costa Rica, as well as efficacy tests for inputs
-                                        used in controlling pests and pathogens affecting these crops.
+                                        used in controlling pests and pathogens affecting this crop.
                                     </p>
                                 </div>
                                 <a href="#contactUs">Get quote</a>
@@ -1591,127 +1594,138 @@
             <!--what-we-do end-->
 
             <!--our-goal-area end-->
-            <!--partner-area start-->
-            <section class="partner-area pb-130">
-                <div class="partner-bg pos-rel pt-125 pb-100">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-8 offset-xl-2">
-                                <div class="section-title text-center mb-70">
-                                    <h2 class="mb-30">We are part of and collaborate with:</h2>
-                                </div>
+           <!--partner-area start-->
+
+        <section class="partner-area pb-160">
+            <div class="partner-bg pos-rel pt-125 pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2">
+                            <div class="section-title text-center mb-190">
+                                <h2 class="mb-25">We are part of and collaborate with:</h2>
                             </div>
                         </div>
-                        <!-- <div class="row"> -->
+                    </div>
+                    <!-- <div class="row"> -->
                     <div class="col-xl-12">
-                            <div class="partner-active">
-                                <div class="partner text-center mb-30">
-                                    <a href="#" class="partner__img">
-                                        <img src="assets/img/AGMS/logos partners/PYME1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="partner text-center mb-30">
-                                    <a href="#" class="partner__img">
-                                        <img src="assets/img/AGMS/logos partners/british_logo.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="partner text-center mb-30">
-                                    <a href="#" class="partner__img">
-                                        <img src="assets/img/AGMS/logos partners/crecex.png" alt="">
-                                    </a>
-                                </div>
+                        <div class="partner-active">
+                            <div class="partner text-center mb-30">
+                                <a href="#" class="partner__img">
+                                    <img src="../assets/img/AGMS/logos partners/PYME1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="partner text-center mb-30">
+                                <a href="#" class="partner__img">
+                                    <img src="../assets/img/AGMS/logos partners/british_logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="partner text-center mb-30">
+                                <a href="#" class="partner__img">
+                                    <img src="../assets/img/AGMS/logos partners/crecex.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="partner text-center mb-30">
+                                <a href="#" class="partner__img">
+                                    <img src="../assets/img/AGMS/logos partners/Logo AGR23.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            </section>
-            <!--partner-area end-->
+            </div>
+            </div>
+        </section>
+        <!--partner-area end-->
     </main>
-    <!--footer-area start-->
-    <footer class="footer-area pos-rel green-bg pt-125" id="contactUs">
-        <div class="fot-shape pos-abl">
-            <img src="assets/img/icon/leaf11.png" alt="">
-        </div>
-        <div class="fot-shape-two pos-abl">
-            <img src="assets/img/icon/leaf12.png" alt="">
-        </div>
-        <a href="#top-menu" class="scroll-target"><i class="far fa-angle-up"></i></a>
-        <!--scroll-target-btn-->
-        <div class="container">
-            <div class="row border-bottom1 pb-40">
-                <div class="col-xl-4 col-lg-3 col-md-6">
-                    <div class="footer__widget mb-30">
-                        <a href="#" class="footer-logo mb-15">
-                            <img src="assets/img/AGMS/logo Agromultiservicios ok blanco.png" width="215"
-                                alt="">
-                        </a>
-                        <p>Find us on our social networks as Agromultiservicios </p>
-                        <title>Redes Sociales</title>
-                        <link rel="stylesheet" href="assets/css/all.min.css">
-                        <style>
-                            .social-icons {
-                                display: flex;
-                                justify-content: center;
-                                list-style: none;
-                                padding: 0;
-                            }
+ <!--footer-area start-->
+ <footer class="footer-area pos-rel green-bg pt-125" id="contactUs">
+    <div class="fot-shape pos-abl">
+        <img src="assets/img/icon/leaf11.png" alt="">
+    </div>
+    <div class="fot-shape-two pos-abl">
+        <img src="assets/img/icon/leaf12.png" alt="">
+    </div>
+    <a href="#top-menu" class="scroll-target"><i class="far fa-angle-up"></i></a>
+    <!--scroll-target-btn-->
+    <div class="container">
+        <div class="row border-bottom1 pb-40">
+            <div class="col-xl-4 col-lg-3 col-md-6">
+                <div class="footer__widget mb-30">
+                    <a href="#" class="footer-logo mb-20">
+                        <img src="/assets/img/AGMS/logo Agromultiservicios ok blanco.png" width="280" alt="">
+                    </a>
+                    <p>Find us on our social media.</p>
+                    <title>Redes Sociales</title>
+                    <link rel="stylesheet" href="assets/css/all.min.css">
+                    <style>
+                        .social-icons {
+                            display: flex;
+                            justify-content: center;
+                            list-style: none;
+                            padding: 0;
+                        }
 
-                            .social-icons li {
-                                margin: 0 15px;
-                            }
+                        .social-icons li {
+                            margin: 0 25px;
+                        }
 
-                            .social-icons a {
-                                color: #f6f0f0;
-                                text-decoration: none;
-                                font-size: 24px;
-                            }
-                        </style>
-                        <div class="social-icons">
-                            <ul class="social-icons">
-                                <li><a href="https://www.facebook.com/share/dg1Yn4gUr48E1rZk/?mibextid=qi2Omg"
-                                        target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://wa.me/qr/YIKY3HT57DL5A1" target="_blank"><i
-                                            class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="https://www.instagram.com/agromultiservicios?igsh=aXFzdzdqcTJndzR0"
-                                        target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/agromultiservicios" target="_blank"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-3 col-md-6">
-                    <div class="footer__widget mb-30">
-                        <h5 class="mb-20">info@agromultiservicios.com</h5>
-                        <p>You can contact us through our e-mail address</p>
-
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-3 col-md-6">
-                    <div class="footer__widget mb-30">
-                        <h5 class="mb-20">+506 8693 2576</h5>
-
-                        <a class="call" href="#"><i class="fas fa-adress"></i> San José, Costa Rica.</a>
-                    </div>
-                    <div class="footer__widget mb-30">
-                        <h5 class="mb-20">+506 8842 5149</h5>
-
-                        <a class="call" href="#"><i class="fas fa-adress"></i> San José, Costa Rica.</a>
+                        .social-icons a {
+                            color: #f6f0f0;
+                            text-decoration: none;
+                            font-size: 35px;
+                        }
+                    </style>
+                    <div class="social-icons">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/share/dg1Yn4gUr48E1rZk/?mibextid=qi2Omg"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://wa.me/qr/YIKY3HT57DL5A1" target="_blank"><i
+                                        class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/agromultiservicios?igsh=aXFzdzdqcTJndzR0"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/agromultiservicios" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-lg-3 col-md-6">
+                <div class="footer__widget mb-30">
+                
+                    <p>We work for clients both inside and outside of Costa Rica.</p>
+                    
+                    <p>Write to us at our email.</p>
+                    <h5 class="mb-20">info@agromultiservicios.com</h5>
 
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="copyright text-center green-soft-bg pt-30 pb-10">
-                        <p>© Copyright 2020 <a href="#">Agromultiservicios.SA</a>. All rights reserved.</p>
-                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-3 col-md-6">
+                <div class="footer__widget mb-30">
+                    <h5 class="mb-20">+506 8693 2576</h5>
+
+                    <!-- <a class="call" href="#"><i class="fas fa-adress"></i> San José, Costa Rica.</a> -->
+                </div>
+                <div class="footer__widget mb-30">
+                    <h5 class="mb-20">+506 8842 5149</h5>
+                    
+
+                    <a class="call" href="#"><i class="fas fa-adress"></i> San José, Costa Rica.</a>
                 </div>
             </div>
         </div>
-    </footer>
-    <!--footer-area end-->
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="copyright text-center green-soft-bg pt-30 pb-10">
+                    <p>© Copyright 2020 <a href="#">Loki Data Analysis S.R.L</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-area end-->
 
 
 
