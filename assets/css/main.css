@@ -4129,6 +4129,7 @@ input.main-search-input:-ms-input-placeholder {
 .popular__content p {
   color: #6d6d6d;
   margin-bottom: 26px;
+  min-height: 280px;
 }
 .popular a {
   font-size: 14px;
@@ -8725,9 +8726,11 @@ input.main-search-input:-ms-input-placeholder {
   font-size: 24px;
   line-height: 1.3;
   font-family: "cerebri_sanssemibold";
+  text-align: center;
 }
 .footer__widget p {
   color: white;
+  text-align: center;
 }
 .footer__widget .call {
   color: white;
@@ -8898,3 +8901,16 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+#idioma_es{
+  width:300px;
+  height:100px;
+  border:3px solid brown;
+  border-radius:22px;
+}
+#idioma_en{
+  width:300px;
+  height:100px;
+  border:3px solid brown;
+  border-radius:22px;
+}
