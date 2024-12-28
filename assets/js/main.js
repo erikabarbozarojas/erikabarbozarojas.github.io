@@ -432,3 +432,17 @@ $(document).ready(function() {
   });   
 
 })(jQuery);
+
+
+async function loadContent(page, section) {
+	await fetch(page)
+		 .then(response => response.text())
+		 .then(data => {
+			 document.getElementById('myContent').innerHTML = data;
+		 });
+	if(section){
+		var url = location.href;               //Save down the URL without hash.
+		location.href = "#"+section;                 //Go to the target element.
+		history.replaceState(null,null,url);
+	}
+ }
