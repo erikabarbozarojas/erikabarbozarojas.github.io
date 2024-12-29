@@ -157,12 +157,13 @@
         <!-- side-mobile-menu start -->
         <nav class="side-mobile-menu">
             <ul id="mobile-menu-active">
-                <li><a href="#top-menu" onclick="closeMobileMenu();">Inicio</a></li>
-                <li><a href="#WhatWeDo" onclick="closeMobileMenu();">Servicios</a></li>
-                <li><a href="#PorqueElegirnos" onclick="closeMobileMenu();">¿Por qué elegirnos?</a></li>
-                <li><a href="#aboutUs" onclick="closeMobileMenu();">Nosotros</a></li>
-                <li><a href="#gallery" onclick="closeMobileMenu();">Galeria</a></li>
-                <li><a href="#contactUs" onclick="closeMobileMenu();">Contactenos</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'top-menu');"		>Inicio</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'whatWeDo');"		>Servicios</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'PorqueElegirnos');"	>¿Por qué elegirnos?</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'aboutUs');"			>Nosotros</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'gallery');"			>Galeria</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('news.html', 'News');"						>Noticias</a></li>
+                <li><a href="#" onclick="closeMobileMenu(); loadContent('index_content.html', 'contactUs');"		>Contactenos</a></li>
             </ul>
         </nav>
         <!-- side-mobile-menu end -->
@@ -429,7 +430,7 @@
         function closeMobileMenu() {
             document.getElementById('mobileCloseButton').click();
         }
-        loadContent('index_content.html');
+        loadContent('index_content.html', null);
     </script>
 
 </body>
