@@ -4129,7 +4129,7 @@ input.main-search-input:-ms-input-placeholder {
 .popular__content p {
   color: #6d6d6d;
   margin-bottom: 26px;
-  min-height: 280px;
+  min-height: 300px;
 }
 .popular a {
   font-size: 14px;
