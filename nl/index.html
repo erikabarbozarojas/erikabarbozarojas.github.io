@@ -2,6 +2,8 @@
 <html class="no-js" lang="nl">
 
 <head>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDMQ41CN76"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,16 +24,27 @@
     <!-- CSS here -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="../assets/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/flaticon.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="stylesheet" href="../assets/css/themify-icons.css">
-    <link rel="stylesheet" href="../assets/css/metisMenu.css">
-    <link rel="stylesheet" href="../assets/css/nice-select.css">
-    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/animate.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/flaticon.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/font.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/metisMenu.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/nice-select.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../assets/css/slick.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        @media (max-width: 767px) {
+            .slider__content h1 {
+                font-size: 36px;
+            }
+            .slider__content h1.h1-long {
+                font-size: 28px;
+            }
+        }
+    </style>
 
     <script>
         function changeLangEn() {
@@ -66,7 +79,7 @@
                         <div class="headers">
                             <div class="headers__icon">
                                 <a href="#"><span id="languajeLabel"><img src="../assets/img/lang/idioma_nl.svg"
-                                            style="margin-right: 20px; width: 30px; height: 20px;"></span></a>
+                                            style="margin-right: 20px; width: 30px; height: 30px; border-radius: 50%; object-fit: cover;"></span></a>
                             </div>
                             <ul class="headers__lang">
                                 <li><a href="#" onclick="changeLangEn();">English</a></li>
@@ -214,7 +227,7 @@
                             <div class="col-xl-12">
                                 <div class="slider__content">
                                     <h1 class="mb-60" data-animation="fadeInUp" data-delay=".5s">
-                                        <h1>Werkzaamheidsproeven<br>met landbouwinputs</h1>
+                                        <h1 class="h1-long">Werkzaamheidsproeven<br>met landbouwinputs</h1>
                                         <div class="list-item mb-45" data-animation="fadeInUp" data-delay=".6s">
                                             <a href="#">voor commerciële ontwikkeling of registratiedoeleinden</a>
                                         </div>
@@ -271,24 +284,22 @@
                         <div class="partner-active">
                             <div class="partner text-center mb-30">
                                 <a href="" class="partner__img">
-                                    <img src="../assets/img/AGMS/logos_partners/PYME1.png" alt="">
+                                    <img src="../assets/img/AGMS/logos_partners/PYME1.png" alt="" loading="lazy">
                                 </a>
                             </div>
                             <div class="partner text-center mb-30">
-                                <a href="https://www.hollandhouse.cr/" class="partner__img"
-                                    style="display: flex; align-items: center; justify-content: center; height: 100%;">
-                                    <img src="../assets/img/AGMS/logos_partners/holandhouse_logo.png" alt=""
-                                        style="max-height: 130px; max-width: 260px; display: block; margin: 40px auto 0 auto;">
+                                <a href="https://www.hollandhouse.cr/" class="partner__img">
+                                    <img src="../assets/img/AGMS/logos_partners/holandhouse_logo.png" alt="" loading="lazy" style="width: 220px;">
                                 </a>
                             </div>
                             <div class="partner text-center mb-30">
                                 <a href="https://crecex.com/" class="partner__img">
-                                    <img src="../assets/img/AGMS/logos_partners/crecex.png" alt="">
+                                    <img src="../assets/img/AGMS/logos_partners/crecex.png" alt="" loading="lazy">
                                 </a>
                             </div>
                             <div class="partner text-center mb-30">
                                 <a href="https://www.agroambiente.com.ec/" class="partner__img">
-                                    <img src="../assets/img/AGMS/logos_partners/LogoAGR23.png" alt="">
+                                    <img src="../assets/img/AGMS/logos_partners/LogoAGR23.png" alt="" loading="lazy" style="margin-top: -70px;">
                                 </a>
                             </div>
                         </div>
@@ -303,10 +314,10 @@
     <!--footer-area start-->
     <footer class="footer-area pos-rel green-bg pt-125" id="contactUs">
         <div class="fot-shape pos-abl">
-            <img src="../assets/img/icon/leaf11.png" alt="">
+            <img src="../assets/img/icon/leaf11.png" alt="" loading="lazy">
         </div>
         <div class="fot-shape-two pos-abl">
-            <img src="../assets/img/icon/leaf12.png" alt="">
+            <img src="../assets/img/icon/leaf12.png" alt="" loading="lazy">
         </div>
         <a href="#top-menu" class="scroll-target"><i class="far fa-angle-up"></i></a>
         <div class="container">
@@ -369,33 +380,35 @@
     <!--footer-area end-->
 
     <!-- JS here -->
-    <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="../assets/js/isotope.pkgd.min.js"></script>
-    <script src="../assets/js/one-page-nav-min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/jquery.meanmenu.min.js"></script>
-    <script src="../assets/js/metisMenu.min.js"></script>
-    <script src="../assets/js/jquery.nice-select.js"></script>
-    <script src="../assets/js/ajax-form.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/jquery.counterup.min.js"></script>
-    <script src="../assets/js/waypoints.min.js"></script>
-    <script src="../assets/js/jquery.scrollUp.min.js"></script>
-    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="../assets/js/jquery.easypiechart.js"></script>
-    <script src="../assets/js/plugins.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/vendor/modernizr-3.5.0.min.js" defer></script>
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js" defer></script>
+    <script src="../assets/js/popper.min.js" defer></script>
+    <script src="../assets/js/bootstrap.min.js" defer></script>
+    <script src="../assets/js/owl.carousel.min.js" defer></script>
+    <script src="../assets/js/isotope.pkgd.min.js" defer></script>
+    <script src="../assets/js/one-page-nav-min.js" defer></script>
+    <script src="../assets/js/slick.min.js" defer></script>
+    <script src="../assets/js/jquery.meanmenu.min.js" defer></script>
+    <script src="../assets/js/metisMenu.min.js" defer></script>
+    <script src="../assets/js/jquery.nice-select.js" defer></script>
+    <script src="../assets/js/ajax-form.js" defer></script>
+    <script src="../assets/js/wow.min.js" defer></script>
+    <script src="../assets/js/jquery.counterup.min.js" defer></script>
+    <script src="../assets/js/waypoints.min.js" defer></script>
+    <script src="../assets/js/jquery.scrollUp.min.js" defer></script>
+    <script src="../assets/js/imagesloaded.pkgd.min.js" defer></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="../assets/js/jquery.easypiechart.js" defer></script>
+    <script src="../assets/js/plugins.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
 
     <script>
         function closeMobileMenu() {
             document.getElementById('mobileCloseButton').click();
         }
-        loadContent('index_content.html', null);
+        document.addEventListener('DOMContentLoaded', function() {
+            loadContent('index_content.html', null);
+        });
     </script>
 
 </body>

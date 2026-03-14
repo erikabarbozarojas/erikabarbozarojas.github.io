@@ -4004,9 +4004,16 @@ input.main-search-input:-ms-input-placeholder {
 
 .partner__img {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .partner__img img {
   display: inline-block;
+}
+.partner {
+  height: 230px;
 }
 
 .catagory-area {
