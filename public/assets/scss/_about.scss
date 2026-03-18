@@ -1,0 +1,429 @@
+//about-landco
+.about__img {	
+	& .img-fluid {
+		box-shadow: 0px 10px 60px 0px rgba(13, 60, 0, 0.5);
+		border-radius: 228px 0px 0px 0px;
+	}
+	&__icon {
+		border-radius: 50%;
+		background-color: rgb(106, 150, 31);
+		position: absolute;
+		left: 0;
+		top: -25px;
+		width: 175px;
+		height: 175px;
+		z-index: 1;
+		text-align: center;
+		line-height: 175px;
+		& .flaticon-garden {
+			font-size: 90px;
+			color: #fff;
+		}
+	}
+	&__leafimg {
+		position: absolute;
+		top: 48px;
+		left: -80px;
+		z-index: -1;
+		animation: float-bob-y infinite 4s linear;
+	}
+}
+.about {
+	@media #{$lg} {
+		padding-left: 15px;
+	}
+	.about__content {
+		& h6 {
+			font-size: 20px;
+			line-height: 1.5;
+			font-family: $cerebri-bold;
+			margin-bottom: 15px;
+		}
+		& a {
+			color: $body-text-color2;
+			font-size: 14px;
+			line-height: 1;
+			font-family: $cerebri-semi;
+			text-transform: uppercase;
+			& i {
+				font-size: 11px;
+			}
+			&:hover {
+				color:$theme-color;
+			}
+		}
+	} 
+}
+//landco-future
+.landco-future {
+	& .section-title {
+		@media #{$xs} {
+			padding-left: 0;
+		}
+		@media #{$sm} {
+			padding-left: 0;
+		}
+	}
+	& .left-lines {
+		position: relative;
+		&::before {
+			content: "";
+			background: $theme-color;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 5px;
+			height: 80px;
+			z-index: 1;
+		}
+	}
+}
+.about__img__box {
+	.about__img--leaf {
+		top: 0;
+		right: 0;
+		animation: float-bob-y infinite 4s linear;
+	}
+	.about__img__two {
+		bottom: -55px;
+		animation: zoomIn infinite 15s alternate-reverse;
+	}
+}
+.about__link {
+	&--list {
+		li {
+			color: $body-text-color2;
+			font-size: 18px;
+			line-height: 1.5;
+			font-family: $futura-medium;
+			margin-bottom: 17px;
+			padding-left: 50px;
+			position: relative;
+			&::before {
+				content: "\f00c";
+				position: absolute;
+				font-family: "Font awesome 5 pro";
+				border:2px solid rgb(106, 150, 31);
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 26px;
+				height: 26px;
+				font-size: 13px;
+				text-align: center;
+				line-height: 25px;
+				color: $theme-color;
+				@include transition(.4s);
+			}
+			&:hover {
+				&::before {
+					color:$white;
+					background:$theme-color;
+				}
+			}
+		}
+	} 
+}
+.about__img{
+	& .helmet {
+		top: -72px;
+		left: -15px;
+		z-index: 3;
+		@media #{$lg} {
+			width:50%;
+			z-index: 0;
+		}
+		@media #{$md} {
+			width:37%;
+			z-index: 0;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+		@media #{$sm} {
+			display: none;
+		}
+	}
+	&__text {
+		background: #0d3c00;
+		max-width: 436px;
+		height: 378px;
+		border-radius: 0 80px 0 0;
+		margin-left: 240px;
+		margin-top: 50px;
+		padding-top: 123px;
+		@media #{$lg} {
+			margin-left: 140px;
+		}
+		@media #{$xs} {
+			margin-left: 0;
+		}
+		@media #{$sm} {
+			margin-left: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			background: url(../img/icon/leaf18.png) no-repeat;
+			right: 0;
+			bottom: 0;
+			width: 166px;
+			height: 298px;
+			z-index: 1;
+			animation: float-bob-x infinite 12s linear;
+		}
+		& span {
+			color:$white;
+			font-size: 250px;
+			font-family: $cerebri-light;
+			display: inline-block;
+			line-height: 0;
+		}
+		&  h3 {
+			color: white;
+			font-size: 30px;
+			line-height: 28px;
+			font-family: $futurabook;
+			margin-top: 20px;
+			padding-left: 65px;
+			@media #{$lg} {
+				padding-left: 25px;
+			}
+		}
+	}
+}
+.about {
+	@media #{$xxl} {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+	@media #{$laptop} {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+	@media #{$xs} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media #{$sm} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+//about-us
+.section-title-02 {
+	& .left-line {
+		position: relative;
+		padding-right: 20px;
+		&::before {
+			right: 0 !important;
+			left: auto !important;
+		}
+	}
+	@media #{$xs} {
+		text-align: center !important;
+	}
+	@media #{$sm} {
+		text-align: center !important;
+	}
+}
+.about__text {
+	@media #{$xs} {
+		padding: 0;
+	}
+	@media #{$sm} {
+		padding: 0;
+	}
+}
+.goals {
+	.goals__img {
+		& img {
+			@media #{$lg} {
+				width: 100%;
+			}
+			@media #{$md} {
+				width: 100%;
+			}
+			@media #{$xs} {
+				width: 100%;
+			}
+			@media #{$sm} {
+				width: 100%;
+			}
+		}
+		&::before {
+			content: "";
+			background: $theme-color;
+			position: absolute;
+			right: 0;
+			bottom: -15px;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+	}
+	&__content {
+		& h5 {
+			font-size: 24px;
+			line-height: 1.1;
+			font-family: $cerebri-bold;
+		}
+		& a {
+			display: inline-block;
+			font-size: 14px;
+			line-height: 1;
+			font-family: $cerebri-bold;
+			color:$body-text-color2;
+			text-transform: uppercase;
+		}
+	}
+	&:hover {
+		& a {
+			color:$theme-color;
+		}
+	}
+}
+//intro-area
+.intro {
+	&__img {
+		@media #{$xs} {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		@media #{$sm} {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		& img {
+			width: 100%;
+		}
+	}
+	&__experience {
+		background: #6a961f;
+		border-radius: 0 70px 70px 70px;
+		@media #{$lg} {
+			margin-left: 0;
+		}
+		@media #{$md} {
+			margin-left: 0;
+		}
+		@media #{$xs} {
+			margin-left: 0;
+		}
+		@media #{$sm} {
+			margin-left: 0;
+		}
+		& span {
+			color: #fff;
+			font-size: 85px;
+			line-height: 105px;
+			font-family: $cerebri-medium;
+		}
+		& h5 {
+			color: #fff;
+			font-size: 24px;
+			line-height: 32px;
+			font-family: $cerebri-medium;
+			padding: 0 50px;
+		}
+	}
+}
+.intro-video {
+	&:before {
+		content: "";
+		background: rgba(13, 60, 0,0.451);
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 0 75px 75px 75px;
+	}
+}
+//landco-future-02
+.landco-future-02 {
+	.section-title {
+		@media #{$xs} {
+			padding-left: 0;
+		}	 
+		@media #{$sm} {
+			padding-left: 0;
+		}
+		& .left-lines {
+			border-left: 5px solid $theme-color;
+		}	
+	}
+}
+.about__img__box {
+	& .landco-img {
+		@media #{$md} {
+			width:100%;
+		}	 
+		@media #{$xs} {
+			width:100%;
+		}	 
+		@media #{$sm} {
+			width:100%;
+		}	 
+	}
+}
+	.about__img__three {
+		top: -44px;
+		right: 126px;
+	}
+	.about__img__video {
+		top: 94px;
+		left: -2px;
+	}
+//history
+.histories {
+	padding: 35px 80px 15px 0;
+	@media #{$lg} {
+		padding: 40px 30px 15px 0;
+	}	 
+	@media #{$xs} {
+		padding: 40px 15px 15px 0;
+	}	 
+	@media #{$sm} {
+		padding: 40px 15px 15px 0;
+	}	 
+	&__img {
+		margin-bottom: 30px;
+		& i {
+			font-size: 65px;
+			color: #6a961f;
+			padding-left: 40px;
+			border-left: 5px solid $theme-color;
+			line-height: 0.9;
+			@include transition(.4s)
+		}
+	} 
+	&__text {
+		@media #{$xs} {
+			padding-left: 15px;
+		}	 
+		@media #{$sm} {
+			padding-left: 15px;
+		}
+		& h5 {
+			color: $theme-color;
+			font-size: 24px;
+			line-height: 1;
+			font-family: $cerebri-bold;
+		}
+		& h6 {
+			font-size: 24px;
+			line-height: 1.5;
+			font-family: $cerebri-semi;
+		}
+	}
+	&:hover {
+		.histories__img {
+			& i {
+				border-left: 5px solid #ff9000;
+			}
+		} 
+	} 
+}

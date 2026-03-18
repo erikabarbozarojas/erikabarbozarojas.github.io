@@ -1,0 +1,56 @@
+//need-jobs-area
+.post{
+	@media #{$xs} {
+		padding-left:25px;
+		padding-right:25px;
+	}
+	@media #{$sm} {
+		padding-left:25px;
+		padding-right:25px;
+	}
+	&__text {
+		& h3 {
+			font-size: 30px;
+			line-height: 1.1;
+			font-family: $cerebri-bold;
+		}
+		& .hr-line {
+			color: $heding;
+			font-size: 15px;
+			line-height: 2.1;
+			font-family: $cerebri-medium;
+			display: inline-block;
+			&::before {
+				content: "";
+				background: $theme-color;
+				position: absolute;
+				left: 0;
+				top: 18px;
+				width: 35px;
+				height: 3px;
+				z-index: 1;
+			}
+		}
+	} 
+}
+.post__img {
+	overflow: hidden; 
+	& img {
+		width: 100%;
+		display: block;
+		@include transition(.4s);
+		&:hover {
+			transform:scale3d(1.2,1.2, 2);
+		}
+	}
+}
+.border_btn2 {
+	background: none;
+	border: 1px solid $hr-border-color2;
+	color: $heding;
+	&:hover {
+		background: $theme-color;
+		border: 1px solid transparent;
+		color: $heding;
+	}
+}

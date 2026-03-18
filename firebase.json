@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "agromultiservicios-7a53f",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

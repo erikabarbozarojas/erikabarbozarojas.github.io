@@ -1,0 +1,293 @@
+//chose-us-area
+.chose-us-area {
+	@media #{$laptop} {
+		padding: 75px 0 50px 0;
+	}
+	@media #{$lg} {
+		padding: 50px 0 0 0;
+	}
+}
+.provide-wrapper {
+	@media #{$xxl} {
+		padding: 0 50px;
+	}
+	@media #{$laptop} {
+		padding: 0 10px;
+	}
+	@media #{$lg} {
+		padding: 0;
+	}
+	@media #{$md} {
+		padding: 0;
+	}
+	@media #{$xs} {
+		padding: 0;
+	}
+	@media #{$sm} {
+		padding: 0;
+	}
+	.section-title {
+		@media #{$lg} {
+			margin: 0;
+		}
+	}
+
+}
+.video {
+	width: 50%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	height: 100%;
+	@media #{$md} {
+		position: relative;
+		width: 100%;
+		min-height: 400px;
+		margin-bottom: 50px;
+	}
+	@media #{$xs} {
+		position: relative;
+		width: 100%;
+		min-height: 400px;
+		margin-bottom: 50px;
+	}
+	@media #{$sm} {
+		position: relative;
+		width: 100%;
+		min-height: 400px;
+		margin-bottom: 50px;
+	}
+	&__icon {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		margin: 0 auto;
+		z-index: 5;
+	}	
+}
+.provide {
+	&__content {
+		padding: 15px 48px 45px 48px;
+		position: relative;
+		z-index: 3;
+		@media #{$laptop} {
+			padding: 48px 29px;
+		}
+		@media #{$lg} {
+			padding: 35px 8px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			background: $theme-color;
+			left: 0;
+			top: 0;
+			width:0;
+			height: 4px;
+			right: 0;
+			margin: 0 auto;
+			z-index: 1;
+			@include transition(.4s);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			background: url(../img/icon/leaf5.png) no-repeat;
+			left: 0;
+			top: 41px;
+			width: 95px;
+			height: 320px;
+			right: 0;
+			margin: 0 auto;
+			opacity: 0;
+			z-index: -1;
+			@include transition(.4s);
+		}
+
+		&:hover {
+			&::before {
+				width: 100%;
+				right: 0;
+			}
+			&::after {
+				opacity: 1;
+			}
+		}
+		&--icon {
+			& .flaticon-growth {
+				font-size: 65px;
+				color: $theme-color;
+				line-height: 1.7;
+			}
+			& .flaticon-watering-can-1 {
+				font-size: 65px;
+				color: $theme-color;
+				line-height: 1.7;
+			}
+		}
+		& h6 {
+			font-size: 20px;
+			line-height: 1.4;
+			font-family: $cerebri-bold;
+		} 
+		& a {
+			color:$body-text-color2;
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 28px;
+			font-family: $cerebri-semi;
+			& i {
+				font-size: 13px;
+			}
+			&:hover, &:focus {
+				color:$theme-color;
+			}
+		}
+	}
+}
+//chose-us-area-two
+.chose-img {
+	margin-left: -32px;
+	z-index: 3;
+	@media #{$laptop} {
+		margin-left: 0;
+	}
+	@media #{$lg} {
+		margin-left: 0;
+	}
+	@media #{$md} {
+		margin-left: 0;
+		text-align: center;
+	}
+	@media #{$xs} {
+		margin-left: 0;
+		text-align: center;
+	}
+	@media #{$sm} {
+		margin-left: 0;
+		text-align: center;
+	}
+	&::before {
+		content: "";
+		background: $theme-color;
+		position: absolute;
+		left: -35px;
+		top: -30px;
+		width: 360px;
+		height: 360px;
+		z-index: -1;
+		@media #{$lg} {
+			display: none;
+		}
+		@media #{$md} {
+			display: none;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+		@media #{$sm} {
+			display: none;
+		}
+	}
+}
+.left-line2 {
+	border-left: 5px solid $theme-color;
+}
+.skill__progress {
+	display: inline-block;
+	& .skill-number {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		& span {
+			color: $green;
+			font-size: 50px;
+			line-height: 28px;
+			font-family: $cerebri-bold;
+			display: inline-block;
+		}
+	}
+	&__content {
+		& h5 {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		& h6 {
+			font-size: 20px;
+			line-height: 28px;
+			font-family: $cerebri-bold;
+		}
+	}
+	.skill-numbers {
+		line-height: 94px;
+		& span {
+			font-size: 24px;
+		} 
+	} 
+} 
+//chose-us-area-02
+.chose-us-area-02 {
+	@media #{$md} {
+		background:none;
+	}
+	@media #{$xs} {
+		background:none;
+	}
+	@media #{$sm} {
+		background:none;
+	}
+}
+.video-03 {
+	width: 61%;
+	height: 100%;
+	@media #{$lg} {
+		width: 48%;
+	}
+	@media #{$md} {
+		position: relative;
+		width: 100%;
+	}
+	@media #{$xs} {
+		position: relative;
+		width: 100%;
+	}
+	@media #{$sm} {
+		position: relative;
+		width: 100%;
+	}
+	&::before {
+		content: "";
+		background: rgba(50, 66, 46,0.302);
+		position: absolute;
+		left: 0px;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+}
+.provide-wrapper-02 {
+	@media #{$xxl} {
+		padding: 0;
+	}
+	@media #{$laptop} {
+		padding: 0;
+	}
+	@media #{$md} {
+		background:$green;
+		padding: 20px;
+	}
+	@media #{$xs} {
+		background:$green;
+		padding: 20px;
+	}
+	@media #{$sm} {
+		background:$green;
+		padding: 20px;
+	}
+}
