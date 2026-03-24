@@ -36,7 +36,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Agricultural Input Registration & Research Services Costa Rica | Efficacy Trials | Agromultiservicios</title>
     <meta name="description" content="Expert agricultural input registration and field research services in Costa Rica. Efficacy trials, experimental sample import, and compliance support for agrochemicals, fertilizers, and pesticides.">
-    <meta name="keywords" content="agricultural input registration Costa Rica, agrochemical registration, pesticide registration, fertilizer registration, efficacy trials, field trials, experimental sample import, crop research, agricultural research services, agronomy research, phytosanitary registration, agro research Costa Rica, efficacy studies, biological efficacy testing, field research, agrochemical testing, agricultural compliance, MAG registration, Costa Rica agriculture">
+    <meta name="keywords" content="efficacy trial, biological efficacy study, fertilizer, fertilizer registration, biostimulant, biorationals, regulatory affairs, registration service, agricultural input registration, holding service, custody service, biopesticides, pesticides, pesticide registration, bioassay, shipping samples, experimental sample import, agricultural research services, regulatory consulting Costa Rica, agrochemical registration, field trials, crop research, agronomy research, phytosanitary registration, Costa Rica agriculture, MAG registration, agricultural compliance">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Open Graph Meta Tags -->
@@ -69,19 +69,40 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/AGMS/miniatura AGMS.jpeg">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/vendor/jquery-1.12.4.min.js" as="script">
+    
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/metisMenu.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Non-critical CSS - Load with media print trick -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/flaticon.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/font.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/themify-icons.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/metisMenu.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="assets/css/slick.css" media="print" onload="this.media='all'; this.onload=null;">
+    
+    <!-- Fallback for browsers without JS -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/font.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/metisMenu.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+    </noscript>
 </head>
 
 <body>
@@ -106,7 +127,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-2">
                         <div class="headers">
                             <div class="headers__icon">
-                                <a href="#"><span id="languajeLabel"><img src="assets/img/lang/idioma_en.png" style="margin-right: 20px;"></span></a>
+                                <a href="#"><span id="languajeLabel"><img src="assets/img/lang/idioma_en.png" width="30" height="20" alt="English" style="margin-right: 20px;"></span></a>
                             </div>
                             <ul class="headers__lang">
                                 <li><a href="#" onclick="changeLang();">Español</a></li>
@@ -132,7 +153,7 @@
                         <div class="logo pl-55">
                             <a href="index.html">
                                 <img src="assets/img/AGMS/logo Agromultiservicios ok - copia.png"
-                                style="width: 230px; height: 40px;" alt=""></a>
+                                width="230" height="40" alt="Agromultiservicios Logo" fetchpriority="high"></a>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8 d-none d-lg-block">
@@ -175,7 +196,7 @@
         <div class="offset-sidebar">
             <div class="offset-widget offset-logo mb-30">
                 <a href="index.html">
-                    <img src="assets/img/AGMS/logo Agromultiservicios ok - copia.png" alt="logo">
+                    <img src="assets/img/AGMS/logo Agromultiservicios ok - copia.png" width="230" height="40" alt="Agromultiservicios logo" loading="lazy">
                 </a>
             </div>
             <div class="offset-widget mb-30">
@@ -202,23 +223,23 @@
             </div>
             <div class="offset-widget mb-30">
                 <div class="instagram">
-                    <a href="https://www.instagram.com/agromultiservicios?igsh=aXFzdzdqcTJndzR0">
-
+                    <a href="https://www.instagram.com/agromultiservicios?igsh=aXFzdzdqcTJndzR0" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                        <!-- Instagram link -->
                     </a>
                 </div>
             </div>
             <div class="offset-widget mt-10">
                 <div class="social-widget">
-                    <a href="#">
+                    <a href="#" aria-label="Visit our Facebook page">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" aria-label="Visit our Twitter profile">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" aria-label="Visit our Google Plus page">
                         <i class="fab fa-google-plus-g"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/agromultiservicios?igsh=aXFzdzdqcTJndzR0" aria-label="Visit our Instagram profile" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -346,23 +367,23 @@
                         <div class="partner-active">
                             <div class="partner text-center mb-30">
                                 <a href="#" class="partner__img">
-                                    <img src="assets/img/AGMS/logos_partners/PYME1.png" alt="">
+                                    <img src="assets/img/AGMS/logos_partners/PYME1.png" width="150" height="75" alt="PYME Partner Logo" loading="lazy">
                                 </a>
                             </div>
                             <div class="partner text-center mb-30">
                                 <a href="https://www.hollandhouse.cr/" class="partner__img">
-                                    <img src="assets/img/AGMS/logos_partners/holandhouse_logo1.png" alt="" style="width: 220px;">
+                                    <img src="assets/img/AGMS/logos_partners/holandhouse_logo1.png" width="220" height="110" alt="HolandHouse Partner Logo" loading="lazy" style="width: 220px;">
                                 </a>
                             </div>
                             <div class="partner text-center mb-30">
                                 <a href="https://crecex.com/" class="partner__img">
-                                    <img src="assets/img/AGMS/logos_partners/crecex.png" alt="">
+                                    <img src="assets/img/AGMS/logos_partners/crecex.png" width="150" height="75" alt="Crecex Partner Logo" loading="lazy">
                                 </a>
                             </div>
 
                             <div class="partner text-center mb-30">
                                 <a href="https://www.agroambiente.com.ec/" class="partner__img">
-                                    <img src="assets/img/AGMS/logos_partners/LogoAGR23.png" alt="" style="margin-top: -70px;">
+                                    <img src="assets/img/AGMS/logos_partners/LogoAGR23.png" width="150" height="150" alt="AGR23 Partner Logo" loading="lazy" style="margin-top: -70px;">
                                 </a>
                             </div>
                         </div>
@@ -376,10 +397,10 @@
  <!--footer-area start-->
  <footer class="footer-area pos-rel green-bg pt-125" id="contactUs">
     <div class="fot-shape pos-abl">
-        <img src="assets/img/icon/leaf11.png" alt="">
+        <img src="assets/img/icon/leaf11.png" width="80" height="80" alt="Decorative leaf" loading="lazy">
     </div>
     <div class="fot-shape-two pos-abl">
-        <img src="assets/img/icon/leaf12.png" alt="">
+        <img src="assets/img/icon/leaf12.png" width="80" height="80" alt="Decorative leaf" loading="lazy">
     </div>
     <a href="#top-menu" class="scroll-target"><i class="far fa-angle-up"></i></a>
     <!--scroll-target-btn-->
@@ -431,11 +452,11 @@
             
             <div class="col-xl-4 col-lg-3 col-md-6">
                 <div class="footer__widget mb-30">
-                    <h5 class="mb-20"><i class="fal fa-phone"></i> <i class="fab fa-whatsapp"></i>  +506 8842 5149 <img src="assets/img/lang/idioma_en.png" style="width: 25px; height: 25px; margin-left: 10px; vertical-align: middle;"></h5>
+                    <h5 class="mb-20"><i class="fal fa-phone"></i> <i class="fab fa-whatsapp"></i>  +506 8842 5149 <img src="assets/img/lang/idioma_en.png" width="25" height="17" alt="English contact" loading="lazy" style="margin-left: 10px; vertical-align: middle;"></h5>
                    
                 </div>
                 <div class="footer__widget border-bottom1">
-                    <h5 class="mb-20 "><i class="fal fa-phone"></i> <i class="fab fa-whatsapp"></i>  +506 8693 2576 <img src="assets/img/lang/idioma_es.png" style="width: 25px; height: 25px; margin-left: 10px; vertical-align: middle;"></h5>
+                    <h5 class="mb-20 "><i class="fal fa-phone"></i> <i class="fab fa-whatsapp"></i>  +506 8693 2576 <img src="assets/img/lang/idioma_es.png" width="25" height="17" alt="Spanish contact" loading="lazy" style="margin-left: 10px; vertical-align: middle;"></h5>
                     
                 </div>
                 <div class="footer__widget mb-30"  style="text-align: center;">
@@ -447,7 +468,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="copyright text-center green-soft-bg pt-30 pb-10">
-                    <p>© Copyright 2020 <a href="#">Loki Data Analysis S.R.L</a>. All rights reserved.</p>
+                    <p>© Copyright 2020 <a href="https://lokidata.com" target="_blank" rel="noopener noreferrer">Loki Data Analysis S.R.L</a>. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -460,35 +481,42 @@
     <!-- JS here -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/one-page-nav-min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.scrollUp.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/owl.carousel.min.js" defer></script>
+    <script src="assets/js/isotope.pkgd.min.js" defer></script>
+    <script src="assets/js/one-page-nav-min.js" defer></script>
+    <script src="assets/js/slick.min.js" defer></script>
+    <script src="assets/js/jquery.meanmenu.min.js" defer></script>
+    <script src="assets/js/metisMenu.min.js" defer></script>
+    <script src="assets/js/jquery.nice-select.js" defer></script>
+    <script src="assets/js/ajax-form.js" defer></script>
+    <script src="assets/js/wow.min.js" defer></script>
+    <script src="assets/js/jquery.counterup.min.js" defer></script>
+    <script src="assets/js/waypoints.min.js" defer></script>
+    <script src="assets/js/jquery.scrollUp.min.js" defer></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+    <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="assets/js/jquery.easypiechart.js" defer></script>
+    <script src="assets/js/plugins.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 
     <script>
         function closeMobileMenu() {
             document.getElementById('mobileCloseButton').click();
         }
-        loadContent('index_content.html', null);
+        // Wait for DOM and scripts to load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                loadContent('index_content.html', null);
+            });
+        } else {
+            loadContent('index_content.html', null);
+        }
     </script>
     
     <!-- GDPR Cookie Consent -->
-    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/cookie-consent.js" defer></script>
 </body>
 
 </html>
